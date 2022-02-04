@@ -1,0 +1,104 @@
+html,
+body {
+    font-size: 62.5%;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.calculator__block {
+    width: 30rem;
+    height: 50rem;
+    border: 1px solid #000;
+    border-radius: 20px;
+    background: #000;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1.5rem;
+    box-shadow: 0.4rem 0.4rem 0.4rem 0.4rem #4f4f4f;
+}
+
+.form-control .form_input { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+input:focus {
+    outline: none;
+}
+
+.screen__block input{
+    margin-top: 2.5rem;
+    width: 30rem;
+    height: 5rem;
+    font-size: 5rem;
+    border-radius: 2rem;
+    background: #000;
+    color: white;
+    border: none;
+    text-align: right;
+}
+
+.screen__block::after {
+    border-radius: 1rem;
+    text-align: center;
+    content:'';
+    display: block;
+    width: 30rem;
+    height: .3rem;
+    background: linear-gradient(90deg, rgba(185,1,96,1) 0%, rgba(61,91,245,1) 100%);
+}
+
+.buttons__block {
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.zero {
+    width: 13rem;
+}
+
+button {
+    margin: 0.5rem;
+    border: none;
+    text-decoration: none;
+    width: 6rem;
+    height: 6rem;
+    background-color: #333;
+    color: white;
+    border-radius: 4rem;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+button:hover {
+    filter: brightness(140%);
+}
+
+button:active {
+    filter: brightness(90%);
+}
+
+.result,
+.operation {
+    background-color: #ff9501;
+}
+
+
+.operation:active {
+    color: #ff9501;
+    background-color: white;
+
+}
+
+.delete,
+.plus-minus,
+.percents {
+    background-color: #a6a6a6;
+}
+
